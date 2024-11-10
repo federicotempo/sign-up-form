@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/sign-up-style.css">
+    <title>sign-up-form</title>
+</head>
+
+<body>
+
+    <div id="img-container">
+
+        <div id="logo-container">
+            <img id="logo" src="img/odin-logo.png" alt="Odin logo">
+            <span id="logo-title">ODIN</span>
+        </div>
+
+    </div>
+
+    <div id="main-container">
+
+        <div id="text-container">
+            <span id="first-text">
+                This is not a real online service!
+                You know you need something like this
+                in your life to help you realize your
+                deepest dreams.
+            </span>
+            <span id="second-text">
+                Sign up now to get started.
+            </span>
+            <span id="third-text">
+                You know you want to.
+            </span>
+        </div>
+
+        <div id="form-container">
+            <h3>Let's do this!</h3>
+            <form id="form" action="" method="post">
+                <div class="form-group">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first-name" minlength="2" maxlength="40" required  >
+                </div>
+                <div class="form-group">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last-name" minlength="2" maxlength="40" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone-number" pattern="^\+?[0-9]{1,4}?[0-9\s\-\(\)]{7,15}$" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" title="La contraseña debe tener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial." pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm_password" id="confirm-password" title="La contraseña debe tener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial." pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$" required>
+                </div>
+                
+            </form>
+        </div>
+
+        <div id="button-container">
+            <button type="submit" form="form">Create Account</button>
+            <span id="account-text">Already have an account?
+                <span id="green-text">Log in</span>
+            </span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
